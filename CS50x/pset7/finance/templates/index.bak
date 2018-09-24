@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your stocks
+{% endblock %}
+
+{% block main %}
+    
+    <table <style="width:100%">
+        <tr>
+            
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    {% for stock in stocks %}
+           <tr>
+           <td>{{stock.symbol}}</td>
+           <td>{{names}}</td>
+           <td>Shares</td>
+           <td>Price</td>
+           <td>Total</td>
+           </tr>
+    {% endfor %}    
+        </tr>      
+    </style>
+   
+{% endblock %}

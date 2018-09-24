@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Transactions 
+{% endblock %}
+
+{% block main %}
+    <br><br>
+    <table class="table">
+        <tr>
+            
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Operation</th>
+            <th>Date</th>
+        </tr>
+    {% for stock in stocks %}
+           <tr>
+           <td>{{stock.symbol}}</td>
+           <td>{{stock.shares}}</td>
+           <td>{{stock.price}}</td>
+           <td>{{stock.operation}}</td>
+           <td>{{stock.date}}</td>
+           </tr>
+    {% endfor %}    
+            <!--<tr>-->
+            <!--<td colspan="4"><i>CASH</i></td>-->
+            <!--<td>{{cash}}</td>-->
+            <!--</tr>-->
+            
+            <!--<tr>-->
+            <!--<td colspan="4"><i></i></td>-->
+            <!--<td><b>{{grandtotal}}</b></td>-->
+            <!--</tr>-->
+
+{% endblock %}

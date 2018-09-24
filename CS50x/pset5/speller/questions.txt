@@ -1,0 +1,9 @@
+0.  According to Wikipedia it’s a word created to describe a disease known as silicosis, caused by inhaling ash and sand dust.
+1.  Returns resource usage.
+2.  Sixteen.
+3.  Because this way the program won't create aditional copies of structs.
+4.  The for loop uses fgetc to walk through characters, storing that char’s value on the integer c. 
+It will proceed until fgetc returns EOF and in each iteration fgetc is called to get the next char and store that char in c. 
+The current char is stored in an array named word. If the current char is not a number, alpha or apostrophe, the program assumes that word is complete.
+5.  Because fscanf should make it harder to skip unwanted characters.
+6.  To ensure that value of parameters won't be changed.
